@@ -18,7 +18,9 @@ html {
  * Remove the margin in all browsers.
  */
 body {
-  margin: 0; }
+  margin: 0; 
+  font-family: "Open Sans", Arial, sans-serif;
+}
 
 /**
  * Correct the font size and margin on `h1` elements within `section` and
@@ -2317,8 +2319,6 @@ template {
 
 .city-filter__label {
   position: relative;
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   align-items: center;
   cursor: pointer; }
@@ -2412,8 +2412,6 @@ template {
     position: absolute;
     top: 0;
     right: -25px;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
     width: 25px; }
@@ -2661,14 +2659,10 @@ template {
 
 .unit-content {
   padding-top: 30px; }
-  .unit-content__breadcrumbs {
-    padding-left: 4.1%;
-    padding-right: 4.1%; }
+
   .unit-content__title {
     margin: 0;
-    margin-bottom: 30px;
-    padding-left: 4.1%;
-    padding-right: 4.1%;
+    padding: 0;
     font-family: "Montserrat", Arial, sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -2813,7 +2807,7 @@ template {
 
 @media (min-width: 1200px) {
     .unit-content__title {
-      margin-bottom: 15px;
+      padding-bottom: 23px;
       font-size: 44px;
       line-height: 54px; }
   .img-content {
