@@ -43,8 +43,119 @@ $color : #ED1C23;
     background-size: 36px 46px;
 }
 
+
+
+
+// about-date
+
+
+.about-date {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.about-date__item-block {
+    width: 25%;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+
+.about-date__item {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    padding: 14px 22px;
+    position: relative;
+}
+
+.about-date__item-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #ED1C23;
+}
+
+.about-date__item-description {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;  
+}
+
+.about-date__item-full-description {
+    padding-top: 25px;
+    display: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+}
+
+
+.about-date__open-close {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        width: 12px;
+        height: 2px;
+        background: #ED1C23;
+    }
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        margin-left: -1px;
+        height: 12px;
+        width: 2px;
+        background: #ED1C23;
+    }
+    &.active {
+        transform: rotate(135deg);
+    }
+}
+
+
+.about-date__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+}
+
+.about-content__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    padding-bottom: 20px;   
+}
+
+
+
+
 @media (min-width: 1200px) { 
+    .about-content {
+        width: 70%;
+    }
     .unit-content__title-text {
         width: 70%;
     }
 }
+
