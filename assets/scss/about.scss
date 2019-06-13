@@ -52,11 +52,19 @@ $color : #ED1C23;
 .about-date {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     padding-bottom: 50px;
 }
 
-.about-date__item-block {
+.about-date__column {
     width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;    
+}
+
+.about-date__item-block {
+    width: 100%;
     margin-left: -1px;
     margin-top: -1px;
 }
@@ -147,10 +155,17 @@ $color : #ED1C23;
     padding-bottom: 20px;   
 }
 
-
+.unit-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 
 @media (min-width: 1200px) { 
+    .unit-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .about-content {
         width: 70%;
     }
@@ -159,3 +174,18 @@ $color : #ED1C23;
     }
 }
 
+@media (max-width: 920px) { 
+    .about-date__item-block {
+        width: 50%;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .about-date__item-block {
+        width: 100%;
+        margin-left: -1px;
+        margin-top: -1px;
+    }
+}

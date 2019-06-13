@@ -286,6 +286,11 @@ details {
 summary {
   display: list-item; }
 
+  ul, li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
 /* Misc
    ========================================================================== */
 /**
@@ -2287,7 +2292,6 @@ template {
   padding: 0 40px;
   padding-right: 20px;
   list-style: none;
-  scroll: auto;
   overflow: hidden; }
 
 .city-filter__item {
@@ -2630,13 +2634,17 @@ template {
       border-bottom: 1px solid #E5E5E5; }
     .submenu__item {
       position: relative;
-      margin-right: 40px;
+      margin-right: 30px;
       font-family: "Open Sans", Arial, sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
-      line-height: 65px;
-      color: #000000; }
+      min-height: 65px;
+      color: #000000;
+      display: flex;
+      align-items: center;
+      max-width: 240px;
+    }
       .submenu__item.active-submenu:after {
         content: '';
         position: absolute;
@@ -2654,8 +2662,9 @@ template {
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
-      line-height: 65px;
-      color: #000000; } }
+      line-height: 20px;
+      color: #000000;
+      padding: 15px 0 20px 0; } }
 
 .unit-content {
   padding-top: 30px; }
@@ -2701,8 +2710,6 @@ template {
   list-style: none; }
 
 .img-content__item {
-  display: -webkit-flex;
-  display: -ms-flex;
   display: flex;
   align-items: center;
   margin-bottom: 10px; }
